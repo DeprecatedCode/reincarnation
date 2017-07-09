@@ -1,0 +1,49 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: #eee;
+}
+
+.game-area {
+  position: absolute;
+  background: #000;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -300px;
+  width: 600px;
+  height: 400px;
+  padding: 0;
+  box-shadow: 0 0 1em #888;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.planet {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tile {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background: #444;
+  outline: 1px solid #555;
+  text-align: center;
+  line-height: 50px;
+}
+
+.swap-x-on .swap-x-candidate {
+  position: relative;
+  left: -2500px;
+}
+
+.swap-y-on .swap-y-candidate {
+  position: relative;
+  top: -2500px;
+}
